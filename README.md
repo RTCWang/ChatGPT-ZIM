@@ -41,7 +41,7 @@ You’ve made too many phone verification requests. Please try again later or co
 `chatGPT`提供了基于`Web`版的交互界面，不便于编程式调用。于是，我们可以通过模拟浏览器去登录，然后把交互过程封装成`API`接口。
 
 ## 2.2 实现过程
-`ChatGPT`作为一个机器人角色加入群聊，需要在PC端转发`ChatGPT`问答。因此，我们可以在PC电脑上完成ChatGPT接口的封装，并加入群聊。然后通过[即构IM](https://doc-zh.zego.im/article/11598)（群聊）将数据实时传输，实现群聊里面与`ChatGPT`聊天。
+`ChatGPT`作为一个机器人角色加入群聊，需要在PC端转发`ChatGPT`问答。因此，我们可以在PC电脑上完成ChatGPT接口的封装，并加入群聊。然后通过[即构IM](https://doc-zh.zego.im/article/11598?source=githubarticle61)（群聊）将数据实时传输，实现群聊里面与`ChatGPT`聊天。
 ![实现pipeline](./images/2.png)
 
 # 3 PC端封装代码实现
@@ -84,7 +84,7 @@ function chat(text, cb) {
 
 
 # 3.2 收发群聊消息
-关于即构IM，如果大家感兴趣可以进入官网[https://doc-zh.zego.im](https://doc-zh.zego.im)了解更多。总所周知，在即时聊天和实时音视频方面，[即构IM](https://doc-zh.zego.im/article/11598)是个人开发者或者中小型企业首选。因为我们只关注一对一私聊或者群聊，因此，在官方提供的SDK的基础上，我们做了二次封装。具体的封装代码请看附件，这里只贴出封装后的使用代码：
+关于即构IM，如果大家感兴趣可以进入官网[https://doc-zh.zego.im](https://doc-zh.zego.im?source=githubarticle61)了解更多。总所周知，在即时聊天和实时音视频方面，[即构IM](https://doc-zh.zego.im/article/11598?source=githubarticle61)是个人开发者或者中小型企业首选。因为我们只关注一对一私聊或者群聊，因此，在官方提供的SDK的基础上，我们做了二次封装。具体的封装代码请看附件，这里只贴出封装后的使用代码：
 
 ```javascript
 const Zego = require('./zego/Zego.js');
@@ -118,10 +118,10 @@ main();
 
 
 # 4 手机端加入群聊与ChatGPT聊天
-有了`PC`端实现后，接下来在手机端只需通过[即构IM SDK](https://doc-zh.zego.im)向群里面@chatgpt发送提问消息即可，当然了，也可以在一对一私聊的时候@chatgpt然后调用chatGPT接口。这些都是可以根据实际需求定制开发，篇幅原因，这里我们只将群聊。
+有了`PC`端实现后，接下来在手机端只需通过[即构IM SDK](https://doc-zh.zego.im?source=githubarticle61)向群里面@chatgpt发送提问消息即可，当然了，也可以在一对一私聊的时候@chatgpt然后调用chatGPT接口。这些都是可以根据实际需求定制开发，篇幅原因，这里我们只将群聊。
 
 
-同样的，我们只关注收发消息，因此对[即构官方](https://doc-zh.zego.im/article/11568)提供的SDK做了二次封装。如果想了解更多细节可以前往[官方文档](https://doc-zh.zego.im/article/11568)阅读。
+同样的，我们只关注收发消息，因此对[即构官方](https://doc-zh.zego.im/article/11568?source=githubarticle61)提供的SDK做了二次封装。如果想了解更多细节可以前往[官方文档](https://doc-zh.zego.im/article/11568?source=githubarticle61)阅读。
 
 对登录ZIM、创建Token等代码这里不详细描述，感兴趣读者可以查看代码附件，代码很简单容易看懂。
 
@@ -227,10 +227,10 @@ public void joinGroup(String groupId) {
 
 除ChatGPT之外，Demo中使用的开发者工具ZIM SDK也是提升工作效率的利器，ZIM SDK提供了全面的 IM 能力，满足文本、图片、语音等多种消息类型，在线人数无上限，支持亿量级消息并发。同时支持安全审核机制，确保消息安全合规。
 
-ZIM SDK提供了快速集成、接口丰富、成熟的即时通讯解决方案。满足多种业务场景通讯需求，适用于打造大型直播、语聊房、客服系统等场景。即构即时通讯产品 IM 开春钜惠低至1折，限时折扣专业版1200元https://www.zego.im/activity/zegoland，也可搭配元宇宙和直播间其他产品组合使用。感兴趣的开发者可到即构官网去注册体验https://doc-zh.zego.im/article/11591
+ZIM SDK提供了快速集成、接口丰富、成熟的即时通讯解决方案。满足多种业务场景通讯需求，适用于打造大型直播、语聊房、客服系统等场景。即构即时通讯产品 IM 开春钜惠低至1折，限时折扣专业版1200元https://www.zego.im/activity/zegoland?source=githubarticle61，也可搭配元宇宙和直播间其他产品组合使用。感兴趣的开发者可到即构官网去注册体验https://doc-zh.zego.im/article/11591?source=githubarticle61
 
 
 # 6 完整代码
 
-- PC端：http://xxxx.xxx
-- android：http://xxxx.xxx
+- PC端：https://github.com/RTCWang/ChatGPT-ZIM/tree/main/ChatGPT%26ZIM/chatgpt_%E6%9C%BA%E5%99%A8%E4%BA%BA
+- android：https://github.com/RTCWang/ChatGPT-ZIM/tree/main/ChatGPT%26ZIM/ChatGPT_android
