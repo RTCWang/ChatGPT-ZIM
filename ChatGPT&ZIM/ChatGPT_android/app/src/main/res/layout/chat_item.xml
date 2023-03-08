@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="44dp"
+    android:paddingRight="12dp">
+
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="张三"
+        android:textColor="#ABABAB" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tarImg"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src="@mipmap/icon_gray" />
+
+        <LinearLayout
+            android:id="@+id/textGravityRoot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="vertical"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_chat_me"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="11dp"
+                android:text="消息消息消息消息消息消息消息消息消息消息消息消息"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="2022-09-03 10:47:00"
+                android:textColor="#ABABAB"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/myImg"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src="@mipmap/icon_blue" />
+    </LinearLayout>
+
+
+</FrameLayout>
